@@ -1,0 +1,19 @@
+{
+  "name": "default-gulp-config",
+  "version": "1.0.0",
+  "description": "Default setup for running projects with Gulp.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jcarney",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-less": "^3.1.0",
+    "gulp-lesshint": "^2.0.0",
+    "gulp-plumber": "^1.1.0"
+  }
+}
