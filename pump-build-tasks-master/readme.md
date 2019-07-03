@@ -1,7 +1,5 @@
 # Summary
-This gulp task is designed to move a project assets such as `resources/project-name/site.css` to the `PumpFaceSystem/deploy/pfs/resources/project-name` folder
-
-This means you will be able to see file changes, as the backend needs to see resources like site.css in the deploy folder.
+This gulp task is designed to move files from location to another when a file is saved.
 
 ## How to use
 - Clone the repository
@@ -13,6 +11,8 @@ This means you will be able to see file changes, as the backend needs to see res
 - Run `npm install gulp` from the command line
 
 - Finally, run `gulp` (this runs the default task which moves the folder contents and watches for further changes)
+
+* NOTE: You may need to install gulp globally for the project to run.
 
 ## Compare files with Diffchecker CLI
 - To check the file has moved over to the deploy folder as intended you can use the Diffchecker CLI to compare the files
