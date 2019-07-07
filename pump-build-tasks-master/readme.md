@@ -1,16 +1,14 @@
 # Summary
-This gulp task is designed to move files from location to another when a file is saved.
+This gulp task is designed to move files from one location to another when a file is saved. Developers are able to sepecify the source, destination and watch pattern at run time.
 
 ## How to use
 - Clone the repository
 
 - cd into the repository
 
-- The gulpfile.js will need the 'project name' replacing the desired name (refer to the "HOW TO USE" in gulpfile.js)
-
 - Run `npm install gulp` from the command line
 
-- Finally, run `gulp` (this runs the default task which moves the folder contents and watches for further changes)
+- Finally, run `gulp --sourceFile 'myFile.txt' --destinationFile '/c/Users/testUser' --watchPattern './*.*'` (this runs the default task which moves the folder contents and watches for further changes)
 
 * NOTE: You may need to install gulp globally for the project to run.
 
@@ -30,5 +28,5 @@ This gulp task is designed to move files from location to another when a file is
   - Path 2: The file piped to the deploy folder
 
 ``` sh
-diffchecker /Users/jasoncarney/repository/iotaa/resources/iotaa/site.css /Users/jasoncarney/repository/PumpFaceSystem/deploy/pfs/resources/iotaa/site.css
+diffchecker /c/Users/testUser/testOne/myFile.txt /c/Users/testUser/testTwo/myFile.txt
 ```
