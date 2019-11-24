@@ -7,13 +7,11 @@ my.$alert( "test toast alert" );
 ``` js
 Navigation.navTo("System.HomeSpace", {});
 ```
-[PumpCo Cog: Navigate to a Space with Navigation.navTo()](https://www.evernote.com/shard/s424/sh/04521424-66a3-4bca-b407-c2486f3bdaf4/317bbabaf71a5c87)
 
 ## Clear down my.model Cards
 ``` js
 my.model.cards.clear();
 ```
-[PumpCo Cog: my.model.cards.clear() - why use it?](https://www.evernote.com/l/AahaJphVeB1AC52PurYEpGPWQCWaxNNmxGI)
 
 ## PumpCo print todays date
 ``` js
@@ -21,7 +19,6 @@ my.$date().toDate();
 
 > "26-Feb-2018"
 ```
-[PumpCo cog: Using Date.js in a cog](https://www.evernote.com/l/AajFe6z33QxPJ6t6Copqhy2VOAsDVVy7Ihs)
 
 ## PumpCo print a specified date
 ``` js
@@ -29,7 +26,6 @@ my.$date( '2018-02-26', 'yyyy-MM-dd' ).toDateJS().add(1).day();
 
 > Tue Feb 27 2018 00:00:00 GMT+0000 (GMT)
 ```
-[PumpCo cog: Using Date.js in a cog](https://www.evernote.com/l/AajFe6z33QxPJ6t6Copqhy2VOAsDVVy7Ihs)
 
 ## Call pulse manually with my.$fire()
 ``` js
@@ -38,7 +34,6 @@ my.$on( "postShown", function( params ) {
     my.$fire("pumpCo.user.calendar.list.response");
 } );
 ```
-[PumpCo: Call pulse manually with my.$fire()](https://www.evernote.com/l/Aag4gnFxAy1HiZPBWdT53ScSdD83CHUBrRE)
 
 ## PulseAs() for a users calendar
 
@@ -47,7 +42,6 @@ my.$on( "postShown", function( params ) {
 ``` js
 my.$pulseAs( john.uid, "pumpCo.user.calendar.list.request", {}, {});
 ```
-[PumpCo Cog: PulseAs() for a users calendar](https://www.evernote.com/l/Aaju_YGIlt1J6o7p5vAOUl8Q2lUxZ4ur8cs)
 
 ## Re-pulse on new notifications received
 
@@ -58,13 +52,11 @@ my.$on( "pumpCo.event.notification.new", function(){
    my.requestAll();
 }.bind( this ) );
 ```
-[Re-pulse on new notifications received](https://www.evernote.com/l/AagKwO1i7zZARqPudjlyIM55XWQdG_j8bjs)
 
 ## Clear a Phil / Knockout Observable
 ``` js
 my.model.nameOfObservable( [] ) ;
 ```
-[PumpCo Cog: Clear a Phil / Knockout Observable](https://www.evernote.com/l/AajBdEVrf3VK_L-CNBwFvVMKktjPPL2jmx4)
 
 ## Add images to resources.json
 
@@ -83,8 +75,6 @@ my.model.nameOfObservable( [] ) ;
 },
 ```
 
-[PumpCo cog: Add images to resources.json](https://www.evernote.com/l/AaglJgclPY5LiK0BrfoqI_4RBqrauT9BTaA)
-
 ## Use the roadie pulse / link to an internal link
 
 ``` js
@@ -101,7 +91,6 @@ my.model.navigateToUrl = function( data, evt ){
 
 };
 ```
-[PumpCo cog: Use the roadie pulse / link to an internal link](https://www.evernote.com/l/AahqK1wR8rdPRb0gFvsj7GA6nIXNBDOUDVM)
 
 ## How to deal with sending multiple pulse requests to the same pulse response
 
@@ -325,4 +314,3 @@ my.$on( "pumpCo.user.report.get.response", function( pulse ){
 <!-- // main.html -->
 <csv-table params="data:$data.hubStatus"></csv-table>
 ```
-[IoTAA dashboards: CSV table case](https://www.evernote.com/l/Aah4eUJcTexOdqoFr1vGjS9UegNO0ZJB0gA)
